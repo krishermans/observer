@@ -6,11 +6,11 @@ namespace observer
     {
         private float temperature;
         private float humidity;
-        private Subject wheaterData;
+        //private Subject wheaterData;
 
         public CurrentConditionsDisplay(Subject weatherData)
         {
-            this.wheaterData = weatherData;
+            //this.wheaterData = weatherData;
             weatherData.RegisterObserver(this);
         }
 
